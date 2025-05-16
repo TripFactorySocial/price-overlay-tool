@@ -535,15 +535,6 @@ const FLYERS = [
     category: "europe",
     tags: ["europe", "ultimate", "multiple countries"],
   },
-  {
-    id: 59,
-    title: "Western Bhutan Tour",
-    image:
-      "/price-overlay-tool/images/3707858-3707857_bf--western-bhutan-tour-5085304.jpg",
-    description: "Tiger's Nest to fortress dzongs: Bhutan's treasures.",
-    category: "asia",
-    tags: ["asia", "bhutan", "cultural"],
-  },
 ];
 
 // Helper function to format category names for display
