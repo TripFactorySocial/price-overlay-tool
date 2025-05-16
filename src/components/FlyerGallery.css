@@ -71,8 +71,8 @@ body {
 
 .foo-logo,
 .nav-logo {
-  width: 150px;
-  height: 30px;
+  width: 226px;
+  height: 46px;
 }
 
 .nav-links {
@@ -755,6 +755,14 @@ main {
   }
   .package-headline h2 {
     font-size: 1.5rem;
+  }
+
+  .nav-logo {
+    width: 150px;
+    /* width: 226px; */
+
+    height: 30px;
+    /* height: 46px; */
   }
 }
 

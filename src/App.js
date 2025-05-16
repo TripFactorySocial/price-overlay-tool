@@ -24,7 +24,7 @@ const FLYERS = [
       "Mystical monasteries & mountain magic in the Land of Thunder.",
     category: "asia",
     tags: ["asia", "bhutan", "cultural"],
-    link: "https://www.goflysmart.com/package/western-bhutan-tour-5085304",
+    link: "https://www.nexusdmc.com/package/western-bhutan-tour-5085304",
   },
   {
     id: 2,
@@ -797,7 +797,7 @@ const App = () => {
           <div className="logo">
             <Link to="/">
               <img
-                src="https://cdn.yourholiday.me/static/dynimg/partner/52/300x150/3156198-3156197_gfs_logo.png"
+                src="https://cdn.yourholiday.me/static/dynimg/partner/98/300x150/3182372-3182371_nexusdmc_hrz_blk.png"
                 alt="logo"
                 className="nav-logo"
               ></img>
@@ -826,7 +826,7 @@ const App = () => {
             <div className="footer-logo">
               <Link to="/">
                 <img
-                  src="https://cdn.yourholiday.me/static/dynimg/partner/36/300x150/3872409-3872408_goflysmart---9.png"
+                  src="https://grow.nexusdmc.com/wp-content/uploads/2025/03/NexusDMC-logo-1.png"
                   alt="logo"
                   className="foo-logo"
                 ></img>
@@ -864,15 +864,15 @@ const App = () => {
                 <h3>Company</h3>
                 <ul>
                   <li>
-                    <Link to="https://www.goflysmart.com/">About Us</Link>
+                    <Link to="https://www.nexusdmc.com/">About Us</Link>
                   </li>
                   <li>
-                    <Link to="https://www.goflysmart.com/service/contactus">
+                    <Link to="https://www.nexusdmc.com/service/contactus">
                       Contact Us
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://www.goflysmart.com/gen/privacy-policy">
+                    <Link to="https://www.nexusdmc.com/tours/footer/privacy-policy-244">
                       Privacy Policy
                     </Link>
                   </li>
@@ -881,7 +881,7 @@ const App = () => {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2025 Goflysmart. All rights reserved.</p>
+            <p>&copy; 2025 Nexus DMC. All rights reserved.</p>
           </div>
         </footer>
       </div>
