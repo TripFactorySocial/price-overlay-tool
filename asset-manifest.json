@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Edit-and_Download-Flyers/static/css/main.c8cbf7ac.css",
-    "main.js": "/Edit-and_Download-Flyers/static/js/main.4d1b3477.js",
+    "main.js": "/Edit-and_Download-Flyers/static/js/main.b4bfa973.js",
     "index.html": "/Edit-and_Download-Flyers/index.html",
     "main.c8cbf7ac.css.map": "/Edit-and_Download-Flyers/static/css/main.c8cbf7ac.css.map",
-    "main.4d1b3477.js.map": "/Edit-and_Download-Flyers/static/js/main.4d1b3477.js.map"
+    "main.b4bfa973.js.map": "/Edit-and_Download-Flyers/static/js/main.b4bfa973.js.map"
   },
   "entrypoints": [
     "static/css/main.c8cbf7ac.css",
-    "static/js/main.4d1b3477.js"
+    "static/js/main.b4bfa973.js"
   ]
 }
