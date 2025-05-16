@@ -1,0 +1,348 @@
+/* PriceOverlayToolModified.css - Additional styles for the modified tool */
+
+/* Integrated view styles */
+.price-overlay-tool .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-overlay-tool .return-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.price-overlay-tool .return-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Enhanced preview styles */
+.price-overlay-tool .preview-panel h2 {
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+/* Enhanced drag hint */
+.price-overlay-tool .drag-hint {
+  border-left: 3px solid #3498db;
+  background-color: #edf7fd;
+  padding: 0.7rem;
+  border-radius: 4px;
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+}
+
+.price-overlay-tool .drag-hint strong {
+  color: #2980b9;
+}
+
+.price-overlay-tool .drag-hint p {
+  margin: 0.3rem 0;
+}
+
+/* Enhanced success message */
+.price-overlay-tool .success-text {
+  background-color: rgba(39, 174, 96, 0.1);
+  color: #27ae60;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .price-overlay-tool .header h1 {
+    font-size: 1.3rem;
+  }
+
+  .price-overlay-tool .return-button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .price-overlay-tool .main-content {
+    flex-direction: column-reverse;
+  }
+
+  .price-overlay-tool .controls-panel,
+  .price-overlay-tool .preview-panel {
+    width: 100%;
+  }
+
+  .price-overlay-tool .preview-panel {
+    min-height: 40vh;
+  }
+}
+
+/* Animation for resize handle */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.price-overlay-tool .resize-handle-active {
+  animation: pulse 1s infinite;
+}
+
+/* Enhanced CSS for PriceOverlayTool with Separate Bounding Boxes */
+
+/* Create visual distinction between price and company boxes */
+.price-section,
+.company-section {
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  padding-left: 1rem;
+}
+
+.price-section {
+  border-left-color: #3498db;
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+.price-section h2 {
+  color: #3498db;
+}
+
+.company-section {
+  border-left-color: #9b59b6;
+  background-color: rgba(155, 89, 182, 0.05);
+}
+
+.company-section h2 {
+  color: #9b59b6;
+}
+
+/* Enhanced section headers */
+.positioning-section,
+.bounding-box-section {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.positioning-section h3,
+.bounding-box-section h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+.price-section .positioning-section h3,
+.price-section .bounding-box-section h3 {
+  color: #2980b9;
+}
+
+.company-section .positioning-section h3,
+.company-section .bounding-box-section h3 {
+  color: #8e44ad;
+}
+
+/* Improve the interaction section styling */
+.interaction-section {
+  background-color: #f0f7ff;
+  border-left: 4px solid #27ae60;
+}
+
+.interaction-section h2 {
+  color: #27ae60;
+}
+
+/* Enhanced drag hint styling */
+.drag-hint {
+  background-color: #f5f7fa;
+  border-left: 4px solid #27ae60;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.drag-hint p {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+}
+
+/* Color-code the drag hint instructions */
+.drag-hint p:nth-child(2),
+.drag-hint p:nth-child(3),
+.drag-hint p:nth-child(4) {
+  color: #3498db; /* Blue for price */
+}
+
+.drag-hint p:nth-child(5),
+.drag-hint p:nth-child(6),
+.drag-hint p:nth-child(7) {
+  color: #9b59b6; /* Purple for company */
+}
+
+/* Enhance sliders for better visual cues */
+.price-section .slider::-webkit-slider-thumb {
+  background-color: #3498db;
+}
+
+.price-section .slider::-moz-range-thumb {
+  background-color: #3498db;
+}
+
+.company-section .slider::-webkit-slider-thumb {
+  background-color: #9b59b6;
+}
+
+.company-section .slider::-moz-range-thumb {
+  background-color: #9b59b6;
+}
+
+/* Improved action buttons */
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+
+.download-button {
+  background: linear-gradient(to right, #3498db, #2980b9);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.download-button:hover {
+  background: linear-gradient(to right, #2980b9, #2471a3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.reset-button {
+  background: linear-gradient(to right, #e74c3c, #c0392b);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reset-button:hover {
+  background: linear-gradient(to right, #c0392b, #a93226);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced preview panel */
+.preview-panel h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.preview-panel h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #3498db, #9b59b6);
+  border-radius: 3px;
+}
+
+.preview-container {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.preview-container:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Update canvas classes for different interactions */
+.preview-canvas.dragging-price {
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+.preview-canvas.dragging-company {
+  box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.5);
+}
+
+/* Help text for bounding boxes */
+.bounding-box-section .help-text {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border-left: 3px solid #95a5a6;
+}
+
+/* Make checkboxes more prominent */
+.control-item.checkbox {
+  margin: 1rem 0;
+}
+
+.control-item.checkbox label {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.control-item.checkbox input {
+  margin-right: 0.5rem;
+  width: 18px;
+  height: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .price-section,
+  .company-section {
+    padding-left: 0.5rem;
+  }
+
+  .positioning-section,
+  .bounding-box-section {
+    padding: 0.75rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+}
