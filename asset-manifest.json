@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/price-overlay-tool/static/css/main.c8cbf7ac.css",
-    "main.js": "/price-overlay-tool/static/js/main.31badf7c.js",
+    "main.js": "/price-overlay-tool/static/js/main.cd6908c6.js",
     "index.html": "/price-overlay-tool/index.html",
     "main.c8cbf7ac.css.map": "/price-overlay-tool/static/css/main.c8cbf7ac.css.map",
-    "main.31badf7c.js.map": "/price-overlay-tool/static/js/main.31badf7c.js.map"
+    "main.cd6908c6.js.map": "/price-overlay-tool/static/js/main.cd6908c6.js.map"
   },
   "entrypoints": [
     "static/css/main.c8cbf7ac.css",
-    "static/js/main.31badf7c.js"
+    "static/js/main.cd6908c6.js"
   ]
 }
